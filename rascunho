@@ -1,0 +1,7 @@
+npm install -D babel-plugin-module-resolver
+
+expo install @expo-google-fonts/dm-sans @expo-google-fonts/dm-serif-display
+
+npm install styled-components  
+
+npm install -D @types/styled-components-react-native    
