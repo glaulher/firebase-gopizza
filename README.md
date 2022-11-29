@@ -32,10 +32,10 @@ Para clonar e executar este aplicativo, você precisará de [Git](https://git-sc
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/glaulher/firebase-myshopping.git
+$ git clone https://github.com/glaulher/firebase-gopizza.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd firebase-myshopping
+$ cd firebase-gopizza
 
 ```
 
