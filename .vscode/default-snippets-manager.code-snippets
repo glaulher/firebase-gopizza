@@ -1,0 +1,40 @@
+{
+	"rnt": {
+		"prefix": "rnt",
+		"description": "rnt",
+		"scope": "typescript",
+		"body": [
+			"${({ theme }) => theme.COLORS.BACKGROUND}"
+		]
+	},
+	"style": {
+		"prefix": "style",
+		"description": "rns",
+		"scope": "typescript",
+		"body": [
+			"import styled from 'styled-components/native';",
+			"",
+			"export const Container = styled.View`",
+			"  flex: 1;",
+			"  justify-content: center;",
+			"  align-items: center;",
+			"`;"
+		]
+	},
+	"rnc": {
+		"prefix": "rnc",
+		"description": "rnc",
+		"scope": "typescriptreact",
+		"body": [
+			"import { Container } from './styles';",
+			"",
+			"export const ${1:${TM_DIRECTORY/^.*(\\\\/|\\\\\\\\)([^(\\\\/|\\\\\\\\)]+)$/$2/}} = () => {",
+			"  return (",
+			"    <Container>",
+			"      ",
+			"    </Container>",
+			"  );",
+			"}"
+		]
+	}
+}
