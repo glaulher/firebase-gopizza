@@ -1,135 +1,59 @@
+# react-native_Ignite
+
 <p align="center" >
   <img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="100" />
 </p>
 
 <h1 align="center">
-  🚀Tela de Login🚀
+  🚀App de pedido de pizzas - React Native - Rocketseat🚀
 </h1>
 
 <p align="center" >
   <img alt="Repository size" src="https://img.shields.io/badge/Mobile-react--native-blue?style=for-the-badge">
 
-  <img alt="Repository size" src="https://img.shields.io/npm/types/typescript?style=for-the-badge">
+<img alt="Repository size" src="https://img.shields.io/npm/types/typescript?style=for-the-badge">
 
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/glaulher/react-native_Ignite?style=for-the-badge">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/glaulher/react-native_Ignite?style=for-the-badge">
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge" />
+<img alt="License" src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge" />
 </p>
 
 ---
 
 ## 📋 Sobre
 
-<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> SignIn - LinearGradiente - StatusBar - Input - Button - Finalizando SignIn, App de pedido de pizzas, Ignite (Rocketseat) - React Native.
+<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Repositório das aulas do curso, Ignite (Rocketseat) - React Native.
 
 ---
 
-## 📂 Como rodar este projeto
+### 🔍 Lista das Aulas
 
-Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [NodeJs](https://nodejs.org/en/) e [Android Studio](https://developer.android.com/studio) Instalado em seu computador.
+<details>
+<summary><span style="color:#58A6FF">Aulas:</span></summary>
+<br>
 
-### 🌀 Clonando o repositório
+[01-Estrutura do projeto](https://github.com/glaulher/firebase-gopizza/tree/structure)
 
-```bash
-# Clone este repositório
-$ git clone https://github.com/glaulher/firebase-gopizza.git
+[02- Tela de Login](https://github.com/glaulher/firebase-gopizza/tree/signin)
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd firebase-gopizza
+</details>
 
-```
-
-### 🎲 Rodando a Aplicação
-
-```bash
-# Instale as dependências
-$ npm install
-
-# Execute o projeto
-$ npm run start
-```
-
-✔️ Notas:
-
-```bash
-# Instalar o expo
-npm i -g expo-cli
-# Criar e instalar Builds
-npm i -g eas-cli
-# Criar o App
-npx create-expo-app --template # Nomear como gopizza
-# Para executar o App se houve alteração na biblioteca nativa
-npx expo install expo-dev-client
-# Path para importações locais
-npm install -D babel-plugin-module-resolver
-# Fontes utilizadas no App
-expo install @expo-google-fonts/dm-sans @expo-google-fonts/dm-serif-display
-# css
-npm install styled-components
-# Tipos para styled-components
-npm install -D @types/styled-components-react-native
-# Cores gradiente
-npx expo install expo-linear-gradient
-# gestos
-npx expo install react-native-gesture-handler
-# biblioteca utilizada para o correto espaçamento no lugar da react-native-iphone-x-helper que está depreciada.
-npx expo install react-native-safe-area-context
-
-```
-
-## Uso do GestureHandlerRootView e SafeAreaProvider na primeira tela carregada.
-
-- Em GestureHandlerRootView usamos style={{ flex: 1 }} para ocupar toda a tela.
-
-- App.tsx
-```javascript
-import { useFonts, DMSans_400Regular } from '@expo-google-fonts/dm-sans';
-import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display';
-import { ThemeProvider } from 'styled-components/native';
-import { StatusBar } from 'expo-status-bar';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-
-import { Loading } from '@components/Loading';
-import { Signin } from '@screens/Signin';
-
-import theme from './src/theme';
-
-export default function App() {
-  const [fontsLoaded] = useFonts({
-    DMSans_400Regular,
-    DMSerifDisplay_400Regular,
-  });
-  return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <SafeAreaProvider>
-        <ThemeProvider theme={theme}>
-          <StatusBar style="light" translucent backgroundColor="transparent" />
-          {fontsLoaded ? <Signin /> : <Loading />}
-        </ThemeProvider>
-      </SafeAreaProvider>
-    </GestureHandlerRootView>
-  );
-}
-
-
-```
+---
 
 ## 🚀 Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- [Expo](https://expo.dev/)
+- [expo](https://docs.expo.dev/)
 - [React Native](https://reactnative.dev)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [TypeScript](https://www.typescriptlang.org)
 
 ---
 
-
 ## 🧑 Autor
 
-<img style="border-radius: 75px;" src="https://glaulher.github.io/assets/img/sample/avatar.jpeg" width="150px;" alt=""/>
+<img style="border-radius: 80px;" src="https://glaulher.github.io/assets/img/sample/avatar.jpeg" width="150px;" alt=""/>
  <h4>Glaulher Medeiros</h4>
 
 <p align="left">
