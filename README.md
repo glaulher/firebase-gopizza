@@ -110,7 +110,7 @@ export { AuthProvider, useAuth, AuthContext };
 
 ```
 
-envolver signin em App.tsx por  <AuthProvider>
+envolver signin em App.tsx por AuthProvider
 
 ```javascript
 ...
