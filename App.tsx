@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components/native';
 import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { AuthProvider } from '@hooks/auth';
 
 import { Loading } from '@components/Loading';
 import { Signin } from '@screens/Signin';
@@ -21,7 +22,13 @@ export default function App() {
       <SafeAreaProvider>
         <ThemeProvider theme={theme}>
           <StatusBar style="light" translucent backgroundColor="transparent" />
-          {fontsLoaded ? <Signin /> : <Loading />}
+          {fontsLoaded ? (
+            <AuthProvider>
+              <Signin />
+            </AuthProvider>
+          ) : (
+            <Loading />
+          )}
         </ThemeProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
