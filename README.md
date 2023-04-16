@@ -40,7 +40,7 @@
 
 [04- Ativando a autenticação e buscar usuário](https://github.com/glaulher/firebase-gopizza/tree/ativandoAutenticacao)
 
-[05- Ativando a autenticação e buscar usuário](https://github.com/glaulher/firebase-gopizza/tree/asyncStorage)
+[05- AsyncStorage](https://github.com/glaulher/firebase-gopizza/tree/asyncStorage)
 
 </details>
 
