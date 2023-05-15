@@ -4,14 +4,14 @@ import { DMSerifDisplay_400Regular } from '@expo-google-fonts/dm-serif-display';
 import { ThemeProvider } from 'styled-components/native';
 import { StatusBar } from 'expo-status-bar';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { AuthProvider } from '@hooks/auth';
 
 import { Loading } from '@components/Loading';
 import { Signin } from '@screens/Signin';
 
 import { Product } from '@screens/Product';
-import { KeyboardAvoidingView, Platform } from 'react-native';
+
 import theme from './src/theme';
 
 export default function App() {
@@ -19,23 +19,20 @@ export default function App() {
     DMSans_400Regular,
     DMSerifDisplay_400Regular,
   });
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ThemeProvider theme={theme}>
         {fontsLoaded ? (
           <AuthProvider>
-            <KeyboardAvoidingView
-              behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-            >
-              <SafeAreaView style={{ backgroundColor: '#B83341' }}>
-                <StatusBar
-                  style="light"
-                  translucent
-                  backgroundColor="transparent"
-                />
-                <Product />
-              </SafeAreaView>
-            </KeyboardAvoidingView>
+            <StatusBar
+              style="light"
+              translucent
+              backgroundColor="transparent"
+            />
+            <SafeAreaProvider>
+              <Product />
+            </SafeAreaProvider>
           </AuthProvider>
         ) : (
           <Loading />

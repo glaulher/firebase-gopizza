@@ -2,8 +2,6 @@ import { LinearGradient } from 'expo-linear-gradient';
 
 import styled, { css } from 'styled-components/native';
 
-import { SafeAreaView } from 'react-native-safe-area-context';
-
 export const Container = styled.KeyboardAvoidingView`
   flex: 1;
 
@@ -18,11 +16,25 @@ export const Header = styled(LinearGradient).attrs(({ theme }) => ({
   align-items: center;
   justify-content: space-between;
 
-  padding: 33px 20px 24px;
+  padding: 0px 20px 24px;
 `;
 
 export const Title = styled.Text`
   font-size: 24px;
+
+  ${({ theme }) => css`
+    font-family: ${theme.FONTS.TEXT};
+    color: ${theme.COLORS.TITLE};
+  `}
+`;
+
+export const DeleteLabel = styled.Text`
+  font-size: 14px;
+
+  padding: 20px 20px 20px 20px;
+  margin-right: -20px;
+  margin-top: -20px;
+  margin-bottom: -20px;
 
   ${({ theme }) => css`
     font-family: ${theme.FONTS.TEXT};
