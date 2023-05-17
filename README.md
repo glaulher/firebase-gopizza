@@ -42,6 +42,8 @@
 
 [05- AsyncStorage](https://github.com/glaulher/firebase-gopizza/tree/asyncStorage)
 
+[06- Header de Produto](https://github.com/glaulher/firebase-gopizza/tree/header_produto)
+
 </details>
 
 ---
