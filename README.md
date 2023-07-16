@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  🚀Header de Produto🚀
+  🚀Upload ImagePicker🚀
 </h1>
 
 <p align="center" >
@@ -20,7 +20,7 @@
 
 ## 📋 Sobre
 
-<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Header de Produto, App de pedido de pizzas, Ignite (Rocketseat) - React Native.
+<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Upload ImagePicker - ButtonBack, App de pedido de pizzas, Ignite (Rocketseat) - React Native.
 
 ---
 
